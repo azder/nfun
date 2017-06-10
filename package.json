@@ -1,6 +1,12 @@
 {
     "name": "@azhder/nfun",
-    "version": "0.0.2",
+    "version": "0.0.3",
+    "description": "a FUNctional suplement for node.js",
+    "keywords": [
+        "functional",
+        "fun",
+        "nfun"
+    ],
     "main": "src/index",
     "scripts": {
         "coverage": "jest --config .jest.json --coverage",
@@ -26,7 +32,10 @@
     },
     "repository": {
         "type": "git",
-        "url": ""
+        "url": "git+https://github.com/azder/nfun.git"
     },
-    "description": ""
+    "bugs": {
+        "url": "https://github.com/azder/nfun/issues"
+    },
+    "homepage": "https://github.com/azder/nfun#readme"
 }
