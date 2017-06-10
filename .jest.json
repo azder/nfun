@@ -1,0 +1,13 @@
+{
+    "verbose": false,
+    "testEnvironment": "node",
+    "coverageDirectory": "tmp/coverage",
+    "coverageReporters": [
+        "json",
+        "lcov",
+        "text"
+    ],
+    "testPathDirs": [
+        "test"
+    ]
+}

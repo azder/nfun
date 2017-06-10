@@ -1,0 +1,12 @@
+{
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "env": {
+        "browser": false,
+        "node": true
+    },
+    "extends": "@azhder/azder",
+    "rules": {
+    }
+}
