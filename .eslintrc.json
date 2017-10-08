@@ -7,6 +7,9 @@
         "node": true
     },
     "extends": "@azhder/azder",
+    "globals": {
+        "Promise": true
+    },
     "rules": {
     }
 }

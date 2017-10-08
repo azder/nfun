@@ -10,6 +10,7 @@ const nfun = Object.assign(
     require('./fn'),
     require('./ob'),
     require('./of'),
+    require('./pr'),
     require('./try')
 );
 
