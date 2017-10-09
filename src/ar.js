@@ -43,12 +43,16 @@ const first = (
     array => nil(array) ? void 0 : (isar(array) ? array[0] : array)
 );
 
+const second = (
+    array => nil(array) ? void 0 : (isar(array) ? array[0] : array)
+);
+
 const last = (
     array => nil(array) ? void 0 : (isar(array) ? array[len(array) - 1] : array)
 );
 
 const nth = curry(
-    (index, array) => array[0 > index ? len(array) + index : index]
+    (index, array) => nil(array) ? void 0 : array[0 > index ? len(array) + index : index]
 );
 
 const take = curry(
@@ -72,6 +76,7 @@ module.exports = freeze$({
     every,
     some,
     first,
+    second,
     last,
     nth,
     take,
