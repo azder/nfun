@@ -44,7 +44,7 @@ const first = (
 );
 
 const second = (
-    array => nil(array) ? void 0 : (isar(array) ? array[0] : array)
+    array => nil(array) ? void 0 : (isar(array) ? array[1] : array)
 );
 
 const last = (
