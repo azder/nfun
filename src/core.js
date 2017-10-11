@@ -24,6 +24,17 @@ const len = (
     xs => nil(xs) ? xs : (xs.length || 0)
 );
 
+// helper for arguments list, in case error is thrown
+const argline = (
+    args => {
+        try {
+            return `${args.map(String).join(',')}`;
+        } catch (e) {
+            return `<${args.length} arguments, ${e.name}>`;
+        }
+    }
+);
+
 // helper for curried function length and name properties
 const bind = (
     (length, curry, fn, args) => (
@@ -31,7 +42,7 @@ const bind = (
             curry.bind(null, fn, ...args),
             {
                 length: {value: length - args.length},
-                name:   {value: `${fn.name || `(${fn})`}(${args.map(String).join(',')})`},
+                name:   {value: `${fn.name || `(${fn})`}(${argline(args)})`},
             }
         )
     )
