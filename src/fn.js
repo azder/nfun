@@ -26,4 +26,15 @@ const tap = curry(
     }
 );
 
-module.exports = freeze$({apply, compose, flow, tap});
+const unary = (
+    fn => arg => fn(arg)
+);
+
+
+module.exports = freeze$({
+    apply,
+    compose,
+    flow,
+    tap,
+    unary,
+});
